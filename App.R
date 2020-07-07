@@ -146,7 +146,7 @@ labs(title = paste("John Tukey's Boxplot --",dow,month,day_lub,year,
 subtitle = "\ncpht=Cases per 100,000 -- dpht = Deaths per 100,000")) +
    ylab("Cases per 100,000") +
    xlab(paste(region_data$Language,
-       "Countries: Mean Cases per 100,000 = ",round(mean(region_data$dpht)),2)) +
+       "Countries: Mean Cases per 100,000 = ",round(mean(region_data$cpht)),2)) +
         geom_jitter(shape=16, 
         position=position_jitter(0.01),
         color="blue")
